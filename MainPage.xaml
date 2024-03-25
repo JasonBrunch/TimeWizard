@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TimeWizard.MainPage">
+
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipedToLeft"/>
+        <!-- Timer Display -->
+        <Label x:Name="currentTimerLabel" Text="0:00" FontSize="Large" HorizontalOptions="Center" />
+
+        <!-- Total Time Today -->
+        <Label x:Name="totalTimeTodayLabel" Text="Total: 0h" HorizontalOptions="Center" />
+
+        <!-- Buttons Container -->
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="startStopButton" Text="Start" Clicked="OnStartStopButtonClicked" />
+            <Button x:Name="resetButton" Text="Reset" Clicked="OnResetButtonClicked" />
+            <Button x:Name="viewStatsButton" Text="View Stats" Clicked="OnViewStatsButtonClicked" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+</ContentPage>
