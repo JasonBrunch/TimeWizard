@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TimeWizard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+1ebb48dbf1f8fcca75a636aeec5dda4c8331b668")]
 [assembly: System.Reflection.AssemblyProductAttribute("TimeWizard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TimeWizard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,22 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TimeWizard.MainPage">
+<ContentPage
+    x:Class="TimeWizard.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#1c1f1c">
 
-    <VerticalStackLayout Spacing="25" Padding="30">
-        <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipedToLeft"/>
-        <!-- Timer Display -->
-        <Label x:Name="currentTimerLabel" Text="0:00" FontSize="Large" HorizontalOptions="Center" />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-        <!-- Total Time Today -->
-        <Label x:Name="totalTimeTodayLabel" Text="Total: 0h" HorizontalOptions="Center" />
+        <Grid.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipedToLeft" />
+        </Grid.GestureRecognizers>
 
-        <!-- Buttons Container -->
-        <HorizontalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
-            <Button x:Name="startStopButton" Text="Start" Clicked="OnStartStopButtonClicked" />
-            <Button x:Name="resetButton" Text="Reset" Clicked="OnResetButtonClicked" />
-            <Button x:Name="viewStatsButton" Text="View Stats" Clicked="OnViewStatsButtonClicked" />
+        <VerticalStackLayout
+            Grid.Row="0"
+            Padding="10,150,10,10"
+            Spacing="25">
+            <!--  Timer Display  -->
+            <Label
+                x:Name="currentTimerLabel"
+                HorizontalOptions="Center"
+                Style="{StaticResource PrimaryTimerStyle}"
+                Text="0:00" />
+            <!--  Total Time Today  -->
+            <Label
+                x:Name="totalTimeTodayLabel"
+                HorizontalOptions="Center"
+                Style="{StaticResource SecondaryTimerStyle}"
+                Text="Total: 0h" />
+        </VerticalStackLayout>
+
+        <!--  Buttons Container  -->
+        <HorizontalStackLayout
+            Grid.Row="1"
+            Padding="50"
+            HorizontalOptions="CenterAndExpand"
+            Spacing="20">
+            <Button
+                x:Name="cancelButton"
+                Style="{StaticResource SecondaryButtonStyle}"
+                Text="Cancel" />
+            <!--  Start/Stop Button Grid  -->
+            <Grid HorizontalOptions="CenterAndExpand">
+                <Button x:Name="startStopButton" Clicked="OnStartStopButtonClicked" Style="{StaticResource PrimaryButtonStyle}" />
+                <Image 
+                    x:Name="playIcon" 
+                    Source="Images/play.png" 
+                    IsVisible="true"
+                    WidthRequest="50" 
+                    HeightRequest="50"
+                    Margin="10,0,0,0"
+                    />
+                <Image 
+                    x:Name="stopIcon" 
+                    Source="Images/square.png" 
+                    IsVisible="false"  
+                    WidthRequest="45" 
+                    HeightRequest="45"
+                    />
+            </Grid>
+            <Button
+                x:Name="resetButton"
+                Clicked="OnResetButtonClicked"
+                Style="{StaticResource SecondaryButtonStyle}"
+                Text="Reset" />
         </HorizontalStackLayout>
-    </VerticalStackLayout>
-
+    </Grid>
 </ContentPage>

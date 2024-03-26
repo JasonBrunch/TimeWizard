@@ -4,6 +4,7 @@
              x:Class="TimeWizard.StatsPage"
              Title="StatsPage">
     <VerticalStackLayout>
-      
+ 
+        
     </VerticalStackLayout>
 </ContentPage>

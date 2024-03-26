@@ -5,6 +5,7 @@ namespace TimeWizard
     public partial class MainPage : ContentPage
     {
         private TimerService _timerService;
+        private bool _isTimerRunning = false;
 
         public MainPage()
         {
@@ -18,16 +19,22 @@ namespace TimeWizard
             await Shell.Current.GoToAsync(nameof(StatsPage));
         }
 
-        private void OnStartButtonClicked(object sender, EventArgs e)
+        private void OnStartStopButtonClicked(object sender, EventArgs e)
         {
-            _timerService.StartTimer();
-            startStopButton.Text = "Stop"; // Change button text to "Stop"
-        }
-
-        private void OnStopButtonClicked(object sender, EventArgs e)
-        {
-            _timerService.StopTimer();
-            startStopButton.Text = "Start"; // Change button text to "Start"
+            if (_isTimerRunning)
+            {
+                _timerService.StopTimer();
+                playIcon.IsVisible = true;
+                stopIcon.IsVisible = false;
+                _isTimerRunning = false;
+            }
+            else
+            {
+                _timerService.StartTimer();
+                playIcon.IsVisible = false;
+                stopIcon.IsVisible = true;
+                _isTimerRunning = true;
+            }
         }
 
         private void OnResetButtonClicked(object sender, EventArgs e)

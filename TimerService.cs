@@ -20,6 +20,7 @@ namespace TimeWizard
         private void OnTimerElapsed(object sender, ElapsedEventArgs e)
         {
             CurrentTime = CurrentTime.Add(TimeSpan.FromSeconds(1));
+            TotalTime = TotalTime.Add(TimeSpan.FromSeconds(1));
             TimerElapsed?.Invoke(CurrentTime, TotalTime);
         }
 
@@ -35,7 +36,7 @@ namespace TimeWizard
         public void StopTimer()
         {
             _timer.Stop();
-            TotalTime += CurrentTime; // Add the current time to the total time
+            //TotalTime += CurrentTime; // Add the current time to the total time
             CurrentTime = TimeSpan.Zero;
             TimerElapsed?.Invoke(CurrentTime, TotalTime);
         }
