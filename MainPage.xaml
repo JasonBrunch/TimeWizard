@@ -3,20 +3,38 @@
     x:Class="TimeWizard.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    BackgroundColor="#1c1f1c">
+    BackgroundColor="{StaticResource SharedBackgroundColor}">
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Grid.GestureRecognizers>
-            <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipedToLeft" />
-        </Grid.GestureRecognizers>
-
-        <VerticalStackLayout
+        <!--  Category Picker Section  -->
+        <HorizontalStackLayout
             Grid.Row="0"
+            Padding="10"
+            HorizontalOptions="Start"
+            VerticalOptions="Center">
+            <Label
+                Margin="0,0,0,2"
+                Text="Category:"
+                TextColor="White"
+                VerticalOptions="Center" />
+            <!--  Adjust the margin as needed  -->
+            <Picker
+                x:Name="categoryPicker"
+                BackgroundColor="#1c1f1c"
+                HeightRequest="40"
+                ItemsSource="{Binding Categories}"
+                SelectedItem="{Binding SelectedCategory}"
+                TextColor="White"
+                VerticalOptions="Center" />
+        </HorizontalStackLayout>
+        <VerticalStackLayout
+            Grid.Row="1"
             Padding="10,150,10,10"
             Spacing="25">
             <!--  Timer Display  -->
@@ -35,38 +53,30 @@
 
         <!--  Buttons Container  -->
         <HorizontalStackLayout
-            Grid.Row="1"
+            Grid.Row="2"
             Padding="50"
             HorizontalOptions="CenterAndExpand"
             Spacing="20">
-            <Button
+            <ImageButton
                 x:Name="cancelButton"
-                Style="{StaticResource SecondaryButtonStyle}"
-                Text="Cancel" />
-            <!--  Start/Stop Button Grid  -->
-            <Grid HorizontalOptions="CenterAndExpand">
-                <Button x:Name="startStopButton" Clicked="OnStartStopButtonClicked" Style="{StaticResource PrimaryButtonStyle}" />
-                <Image 
-                    x:Name="playIcon" 
-                    Source="Images/play.png" 
-                    IsVisible="true"
-                    WidthRequest="50" 
-                    HeightRequest="50"
-                    Margin="10,0,0,0"
-                    />
-                <Image 
-                    x:Name="stopIcon" 
-                    Source="Images/square.png" 
-                    IsVisible="false"  
-                    WidthRequest="45" 
-                    HeightRequest="45"
-                    />
-            </Grid>
-            <Button
+                BackgroundColor="Transparent"
+                Clicked="OnCancelButtonClicked"
+                Source="smiles.png"
+                Style="{StaticResource SecondaryButtonStyle}" />
+
+            <ImageButton
+                x:Name="startStopButton"
+                BackgroundColor="Transparent"
+                Clicked="OnStartStopButtonClicked"
+                Source="{Binding CurrentButtonImage}"
+                Style="{StaticResource PrimaryButtonStyle}" />
+
+            <ImageButton
                 x:Name="resetButton"
+                BackgroundColor="Transparent"
                 Clicked="OnResetButtonClicked"
-                Style="{StaticResource SecondaryButtonStyle}"
-                Text="Reset" />
+                Source="smiles.png"
+                Style="{StaticResource SecondaryButtonStyle}" />
         </HorizontalStackLayout>
     </Grid>
 </ContentPage>

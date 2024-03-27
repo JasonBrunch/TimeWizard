@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Sampson\\projects\\TimeWizard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|c:\\users\\sampson\\projects\\timewizard\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|solutionrelative:sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|c:\\users\\sampson\\projects\\timewizard\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|c:\\users\\sampson\\projects\\timewizard\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|c:\\users\\sampson\\projects\\timewizard\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|solutionrelative:stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|c:\\users\\sampson\\projects\\timewizard\\statspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|solutionrelative:statspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|c:\\users\\sampson\\projects\\timewizard\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|c:\\users\\sampson\\projects\\timewizard\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4580ACA-1F4A-42BD-A509-FA85EE0EE0CF}|TimeWizard.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,72 +21,33 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Sampson\\projects\\TimeWizard\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\Sampson\\projects\\TimeWizard\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T05:10:40.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SessionService.cs",
-              "DocumentMoniker": "C:\\Users\\Sampson\\projects\\TimeWizard\\SessionService.cs",
-              "RelativeDocumentMoniker": "SessionService.cs",
-              "ToolTip": "C:\\Users\\Sampson\\projects\\TimeWizard\\SessionService.cs",
-              "RelativeToolTip": "SessionService.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAQwDAAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T05:02:38.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Stats.cs",
-              "DocumentMoniker": "C:\\Users\\Sampson\\projects\\TimeWizard\\Stats.cs",
-              "RelativeDocumentMoniker": "Stats.cs",
-              "ToolTip": "C:\\Users\\Sampson\\projects\\TimeWizard\\Stats.cs",
-              "RelativeToolTip": "Stats.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T04:49:26.149Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StatsPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Sampson\\projects\\TimeWizard\\StatsPage.xaml",
-              "RelativeDocumentMoniker": "StatsPage.xaml",
-              "ToolTip": "C:\\Users\\Sampson\\projects\\TimeWizard\\StatsPage.xaml",
-              "RelativeToolTip": "StatsPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Sampson\\projects\\TimeWizard\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\Sampson\\projects\\TimeWizard\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-26T04:46:12.431Z",
+              "WhenOpened": "2024-03-27T04:20:24.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Sampson\\projects\\TimeWizard\\AppShell.xaml",
-              "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "C:\\Users\\Sampson\\projects\\TimeWizard\\AppShell.xaml",
-              "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-26T04:34:08.794Z",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Sampson\\projects\\TimeWizard\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Sampson\\projects\\TimeWizard\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAswAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T01:39:09.159Z",
               "EditorCaption": ""
             }
           ]

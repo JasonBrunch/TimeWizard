@@ -5,11 +5,10 @@ namespace TimeWizard
 {
     public class TimerService
     {
-        public event Action<TimeSpan, TimeSpan>? TimerElapsed;
-        private System.Timers.Timer _timer;
-        public TimeSpan TotalTime { get; private set; }
+        public event Action? TimerElapsed;
+        private readonly System.Timers.Timer _timer;
         public TimeSpan CurrentTime { get; private set; }
-        public DateTime StartDate { get; private set; }
+       
 
         public TimerService()
         {
@@ -17,18 +16,22 @@ namespace TimeWizard
             _timer.Elapsed += OnTimerElapsed;
         }
 
-        private void OnTimerElapsed(object sender, ElapsedEventArgs e)
+        private void OnTimerElapsed(object? sender, ElapsedEventArgs e)
         {
             CurrentTime = CurrentTime.Add(TimeSpan.FromSeconds(1));
-            TotalTime = TotalTime.Add(TimeSpan.FromSeconds(1));
-            TimerElapsed?.Invoke(CurrentTime, TotalTime);
+            if (App.SessionService.CurrentSession != null)
+            {
+                // Update the total time of the current session
+                App.SessionService.CurrentSession.TotalTime = App.SessionService.CurrentSession.TotalTime.Add(TimeSpan.FromSeconds(1));
+                TimerElapsed?.Invoke();
+            }
         }
 
         public void StartTimer()
         {
             if (!_timer.Enabled)
             {
-                StartDate = DateTime.Now.Date;
+                App.SessionService.StartSession();
                 _timer.Start();
             }
         }
@@ -36,16 +39,19 @@ namespace TimeWizard
         public void StopTimer()
         {
             _timer.Stop();
-            //TotalTime += CurrentTime; // Add the current time to the total time
             CurrentTime = TimeSpan.Zero;
-            TimerElapsed?.Invoke(CurrentTime, TotalTime);
+            TimerElapsed?.Invoke();
         }
 
         public void Reset()
         {
             StopTimer();
-            TotalTime = TimeSpan.Zero; // Also reset the total time
-            TimerElapsed?.Invoke(CurrentTime, TotalTime);
+            if(App.SessionService.CurrentSession != null)
+            {
+                App.SessionService.CurrentSession.TotalTime = TimeSpan.Zero; 
+            }
+            
+            TimerElapsed?.Invoke();
         }
     }
 }

@@ -1,5 +1,6 @@
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
+TimeBomb.ttf
 appicon.ico
 appiconLargeTile.scale-100.png
 appiconLargeTile.scale-125.png
@@ -46,11 +47,10 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
-dotnet_bot.scale-100.png
-dotnet_bot.scale-125.png
-dotnet_bot.scale-150.png
-dotnet_bot.scale-200.png
-dotnet_bot.scale-400.png
+play.scale-100.png
+smiles.scale-100.png
+square.scale-100.png
+test.scale-100.png
 splashSplashScreen.scale-100.png
 splashSplashScreen.scale-125.png
 splashSplashScreen.scale-150.png
