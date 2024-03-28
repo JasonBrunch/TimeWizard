@@ -1,5 +1,7 @@
 ﻿obj\Debug\net8.0-android\resizetizer\r\drawable\play.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\smiles.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\square.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\test.png
 obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
 obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon_round.xml
 obj\Debug\net8.0-android\resizetizer\r\mipmap-hdpi\appicon.png

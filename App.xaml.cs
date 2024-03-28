@@ -15,5 +15,10 @@
 
             MainPage = new AppShell();
         }
+        protected override void OnSleep()
+        {
+            // Save sessions when app goes to sleep
+            SessionService.SaveSessions();
+        }
     }
 }

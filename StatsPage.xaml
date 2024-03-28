@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TimeWizard.StatsPage"
-             BackgroundColor="#1c1f1c"
-             xmlns:model="clr-namespace:TimeWizard">
-    <!-- Add a namespace for your models -->
-
-    <VerticalStackLayout>
-        <VerticalStackLayout.GestureRecognizers>
+<ContentPage
+    x:Class="TimeWizard.StatsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:model="clr-namespace:TimeWizard"
+    BackgroundColor="#1c1f1c"
+    Shell.NavBarIsVisible="False">
+    <Grid>
+        <Grid.GestureRecognizers>
             <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipedRight" />
-        </VerticalStackLayout.GestureRecognizers>
+        </Grid.GestureRecognizers>
 
-        <CollectionView x:Name="sessionsList" ItemsSource="{Binding Sessions}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:SessionDisplay">
-                    <!-- Specify the type of the data -->
-                    <Label Text="{Binding DisplayText}" TextColor="WhiteSmoke"/>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </VerticalStackLayout>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!--  For Navigation Labels  -->
+                <RowDefinition Height="*" />
+                <!--  For List  -->
+            </Grid.RowDefinitions>
+
+            <HorizontalStackLayout
+            Grid.Row="0"
+            Padding="10"
+            HorizontalOptions="CenterAndExpand"
+            Spacing="20">
+                <Label
+                FontSize="20"
+                Opacity="0.5"
+                Text="Timer"
+                TextColor="White" />
+
+                <Label
+                FontSize="20"
+                Text="Stats"
+                TextColor="White"
+                TextDecorations="Underline" />
+            </HorizontalStackLayout>
+
+            <CollectionView
+            x:Name="sessionsList"
+            Grid.Row="1"
+            ItemsSource="{Binding Sessions}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:SessionDisplay">
+                        <Frame
+                        Margin="5"
+                        Padding="10"
+                     Background="Transparent"
+                        CornerRadius="10">
+                            <Label
+                            FontSize="16"
+                            Text="{Binding DisplayText}"
+                            TextColor="WhiteSmoke" />
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </Grid>
 </ContentPage>

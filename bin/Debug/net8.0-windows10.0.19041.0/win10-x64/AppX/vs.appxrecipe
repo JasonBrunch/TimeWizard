@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Sampson\projects\TimeWizard\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-27T06:11:06.901</Modified>
+      <Modified>2024-03-28T01:17:03.013</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-27T06:08:26.806</Modified>
+      <Modified>2024-03-28T01:17:02.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TimeWizard.runtimeconfig.json">
       <PackagePath>TimeWizard.runtimeconfig.json</PackagePath>
-      <Modified>2024-03-27T02:02:33.493</Modified>
+      <Modified>2024-03-28T01:17:02.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TimeWizard.dll">
       <PackagePath>TimeWizard.dll</PackagePath>
-      <Modified>2024-03-27T06:11:06.437</Modified>
+      <Modified>2024-03-28T01:17:00.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TimeWizard.exe</PackagePath>
-      <Modified>2024-03-27T06:11:06.445</Modified>
+      <Modified>2024-03-28T01:17:00.503</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:00:19.942</Modified>
+      <Modified>2024-03-28T01:16:55.795</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-03-27T02:00:19.964</Modified>
+      <Modified>2024-03-28T01:16:55.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-03-27T02:00:20.007</Modified>
+      <Modified>2024-03-28T01:16:55.866</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-03-27T02:00:20.057</Modified>
+      <Modified>2024-03-28T01:16:55.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-03-27T02:00:20.263</Modified>
+      <Modified>2024-03-28T01:16:56.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -85,189 +85,9 @@
       <PackagePath>TimeBomb.ttf</PackagePath>
       <Modified>2012-12-07T22:43:31.082</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
-      <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-03-27T02:00:22.103</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
-      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:00:23.002</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
-      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-03-27T02:00:23.043</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
-      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-03-27T02:00:23.079</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
-      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-03-27T02:00:23.143</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
-      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-03-27T02:00:23.371</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.315</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.328</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.380</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.342</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.355</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.246</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.258</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.304</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.267</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.280</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
-      <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.123</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
-      <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.133</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
-      <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.142</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
-      <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.155</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
-      <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.173</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
-      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.183</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
-      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.193</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
-      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.237</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
-      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.206</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
-      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.216</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
-      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.574</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
-      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.596</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
-      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.619</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
-      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.654</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
-      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.716</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
-      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.479</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
-      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.494</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
-      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.509</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
-      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.527</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
-      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.554</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
-      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.397</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
-      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.410</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
-      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.424</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
-      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.441</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
-      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.463</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
-      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.737</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
-      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.763</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
-      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.794</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
-      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.855</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
-      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-03-27T02:00:22.978</Modified>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-100.png">
+      <PackagePath>test.scale-100.png</PackagePath>
+      <Modified>2024-03-27T02:09:13.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\play.scale-100.png">
       <PackagePath>play.scale-100.png</PackagePath>
@@ -281,13 +101,193 @@
       <PackagePath>square.scale-100.png</PackagePath>
       <Modified>2024-03-27T02:11:01.597</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-100.png">
-      <PackagePath>test.scale-100.png</PackagePath>
-      <Modified>2024-03-27T02:09:13.302</Modified>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+      <Modified>2024-03-28T01:16:59.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+      <Modified>2024-03-28T01:16:59.343</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+      <Modified>2024-03-28T01:16:59.273</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+      <Modified>2024-03-28T01:16:59.227</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+      <Modified>2024-03-28T01:16:59.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+      <Modified>2024-03-28T01:16:59.153</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+      <Modified>2024-03-28T01:16:59.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.984</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.796</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.697</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.672</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.652</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.627</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.614</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.575</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.551</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.529</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.475</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.450</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.416</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.402</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.311</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+      <Modified>2024-03-28T01:16:58.295</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+      <Modified>2024-03-28T01:16:58.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TimeWizard.deps.json">
       <PackagePath>TimeWizard.deps.json</PackagePath>
-      <Modified>2024-03-27T02:02:33.490</Modified>
+      <Modified>2024-03-28T01:17:01.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

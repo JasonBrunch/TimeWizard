@@ -5,56 +5,67 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     BackgroundColor="{StaticResource SharedBackgroundColor}">
 
-    <Grid>
+    <Grid x:Name="MainGrid">
+        <!--  Swipe Gesture Recognizer for navigating to StatsPage  -->
+        <Grid.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="OnSwipedToLeft" />
+        </Grid.GestureRecognizers>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
+            <!--  For Navigation Labels  -->
+            <RowDefinition Height="4*" />
+            <!--  For Timer Section  -->
+            <RowDefinition Height="1*" />
+            <!--  For Buttons Section  -->
         </Grid.RowDefinitions>
 
-        <!--  Category Picker Section  -->
+        <!--  Navigation Labels  -->
         <HorizontalStackLayout
             Grid.Row="0"
-            Padding="10"
-            HorizontalOptions="Start"
-            VerticalOptions="Center">
+            HorizontalOptions="CenterAndExpand"
+            Spacing="20"
+            Padding="0,20,0,0">
             <Label
-                Margin="0,0,0,2"
-                Text="Category:"
+                Text="Timer"
                 TextColor="White"
-                VerticalOptions="Center" />
-            <!--  Adjust the margin as needed  -->
-            <Picker
-                x:Name="categoryPicker"
-                BackgroundColor="#1c1f1c"
-                HeightRequest="40"
-                ItemsSource="{Binding Categories}"
-                SelectedItem="{Binding SelectedCategory}"
+                TextDecorations="Underline" 
+                FontSize="20"/>
+            <Label
+                Opacity="0.5"
+                Text="Stats"
                 TextColor="White"
-                VerticalOptions="Center" />
+                FontSize="20"
+                />
         </HorizontalStackLayout>
+
+        <!--  Timer Section  -->
         <VerticalStackLayout
             Grid.Row="1"
-            Padding="10,150,10,10"
-            Spacing="25">
-            <!--  Timer Display  -->
+            Padding="10"
+            HorizontalOptions="Center"
+            Spacing="10"
+            VerticalOptions="Center">
             <Label
                 x:Name="currentTimerLabel"
-                HorizontalOptions="Center"
                 Style="{StaticResource PrimaryTimerStyle}"
-                Text="0:00" />
-            <!--  Total Time Today  -->
-            <Label
-                x:Name="totalTimeTodayLabel"
-                HorizontalOptions="Center"
-                Style="{StaticResource SecondaryTimerStyle}"
-                Text="Total: 0h" />
+                Text="00:00:00" />
+            <HorizontalStackLayout
+                Spacing="10"
+                Margin="5,0,0,0">
+                <Label
+                    x:Name="totalTimeHeading"
+                    Style="{StaticResource SecondaryTimerStyle}"
+                    Text="TOTAL:"/>
+                <Label
+                    x:Name="totalTimeTodayLabel"
+                    Style="{StaticResource SecondaryTimerStyle}"
+                    />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
 
-        <!--  Buttons Container  -->
+        <!--  Buttons Section  -->
         <HorizontalStackLayout
             Grid.Row="2"
-            Padding="50"
             HorizontalOptions="CenterAndExpand"
             Spacing="20">
             <ImageButton
@@ -63,14 +74,12 @@
                 Clicked="OnCancelButtonClicked"
                 Source="smiles.png"
                 Style="{StaticResource SecondaryButtonStyle}" />
-
             <ImageButton
                 x:Name="startStopButton"
                 BackgroundColor="Transparent"
                 Clicked="OnStartStopButtonClicked"
                 Source="{Binding CurrentButtonImage}"
                 Style="{StaticResource PrimaryButtonStyle}" />
-
             <ImageButton
                 x:Name="resetButton"
                 BackgroundColor="Transparent"

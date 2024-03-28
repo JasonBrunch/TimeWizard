@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using Microsoft.Maui.Storage;
 using Newtonsoft.Json;
@@ -13,65 +11,86 @@ namespace TimeWizard
     {
         public DateTime Date { get; set; }
         public TimeSpan TotalTime { get; set; }
+
+        public bool IsValid()
+        {
+            // Add any specific validation logic for Session here
+            return Date != default && TotalTime >= TimeSpan.Zero;
+        }
     }
+
     public class SessionService
     {
         public List<Session> Sessions { get; private set; } = new List<Session>();
         public Session? CurrentSession { get; private set; }
 
-    //Sets up the session list upon loading the app
-    public void LoadSessions()
-    {
-        var filePath = Path.Combine(FileSystem.AppDataDirectory, "sessions.json");
-        if (File.Exists(filePath))
+        public void LoadSessions()
         {
-            var jsonData = File.ReadAllText(filePath);
-            Sessions = JsonConvert.DeserializeObject<List<Session>>(jsonData) ?? new List<Session>();
+            try
+            {
+                var filePath = Path.Combine(FileSystem.AppDataDirectory, "sessions.json");
+                if (File.Exists(filePath))
+                {
+                    var jsonData = File.ReadAllText(filePath);
+                    var sessions = JsonConvert.DeserializeObject<List<Session>>(jsonData);
+                    Sessions = sessions?.Where(session => session?.IsValid() == true).ToList() ?? new List<Session>();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log error or handle it as needed
+                Console.WriteLine($"Error loading sessions: {ex.Message}");
+            }
         }
-    }
-    //Fires when timer starts. Sets up the current session
-    public void StartSession()
-    {
-        //Get the days session, creates it if doesnt exist, and sets the current session variable
-        var today = DateTime.Today;
-        Session? currentSession = Sessions.FirstOrDefault(s => s.Date.Date == today);
-        if (currentSession == null)
+
+        public void StartSession()
         {
-            currentSession = new Session { Date = today, TotalTime = TimeSpan.Zero };
-            Sessions.Add(currentSession);
+            var today = DateTime.Today;
+            Session? currentSession = Sessions.FirstOrDefault(s => s.Date.Date == today);
+            if (currentSession == null)
+            {
+                currentSession = new Session { Date = today, TotalTime = TimeSpan.Zero };
+                Sessions.Add(currentSession);
+            }
+            CurrentSession = currentSession;
         }
-        CurrentSession = currentSession;
-    }
-
-
 
         public void SaveSessions()
         {
-            var filePath = Path.Combine(FileSystem.AppDataDirectory, "sessions.json");
-            var jsonData = JsonConvert.SerializeObject(Sessions);
-            File.WriteAllText(filePath, jsonData);
+            try
+            {
+                var filePath = Path.Combine(FileSystem.AppDataDirectory, "sessions.json");
+                var jsonData = JsonConvert.SerializeObject(Sessions);
+                File.WriteAllText(filePath, jsonData);
+            }
+            catch (Exception ex)
+            {
+                // Log error or handle it as needed
+                Console.WriteLine($"Error saving sessions: {ex.Message}");
+            }
         }
-       
-        
+
         public void UpdateSession(TimeSpan duration)
         {
-            var today = DateTime.Today;
-            var currentSession = Sessions.FirstOrDefault(s => s.Date.Date == today);
-
-            if (currentSession != null)
+            if (CurrentSession == null)
             {
-                currentSession.TotalTime += duration;
-                SaveSessions(); // Consider when to call this
+                return;
             }
 
-            // Stop your timer here
+            if (duration < TimeSpan.Zero)
+            {
+                // Handle invalid duration
+                return;
+            }
+
+            CurrentSession.TotalTime += duration;
+            SaveSessions();
         }
+
         public void ResetSessions()
         {
             Sessions.Clear();
             SaveSessions();
         }
-
     }
-
 }

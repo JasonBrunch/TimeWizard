@@ -6,37 +6,35 @@ namespace TimeWizard
     {
         private bool _isTimerRunning = false;
         private string _currentButtonImage = "play.png";
-        private List<string> _categories = new List<string> { "Work", "Study", "Exercise", "Leisure", "Other" };
-        private string _selectedCategory;
 
         public MainPage()
         {
             InitializeComponent();
             BindingContext = this;
             App.TimerService.TimerElapsed += UpdateTimerLabel;
-
-            // Assuming _categories is not empty, set the first category as the default
-            _selectedCategory = _categories.FirstOrDefault();
-            categoryPicker.ItemsSource = _categories;
-            categoryPicker.SelectedItem = _selectedCategory; // Set the default category here
-
-            categoryPicker.SelectedIndexChanged += OnCategorySelected;
+            // Initialize the current button image for the start/stop button
+            CurrentButtonImage = "play.png";
+            InitializeTimerLabel();
         }
 
-
-        public string SelectedCategory
-        {
-            get => _selectedCategory;
-            set => _selectedCategory = value;
-        }
         public string CurrentButtonImage
         {
             get => _currentButtonImage;
             set
             {
-                _currentButtonImage = value;
-                OnPropertyChanged(nameof(CurrentButtonImage)); // Notify the UI of the change
+                if (_currentButtonImage != value)
+                {
+                    _currentButtonImage = value;
+                    OnPropertyChanged(nameof(CurrentButtonImage));
+                }
             }
+        }
+
+        protected override void OnDisappearing()
+        {
+            // Save sessions when app is going into the background
+            App.SessionService.SaveSessions();
+            base.OnDisappearing();
         }
         private async void OnSwipedToLeft(object sender, SwipedEventArgs e)
         {
@@ -50,26 +48,24 @@ namespace TimeWizard
             {
                 App.TimerService.StopTimer();
                 _isTimerRunning = false;
-                CurrentButtonImage = "play.png"; // Change the button image
+                CurrentButtonImage = "play.png";
+                App.SessionService.SaveSessions();
             }
             else
             {
                 App.TimerService.StartTimer();
                 _isTimerRunning = true;
-                CurrentButtonImage = "square.png"; // Change the button image
+                CurrentButtonImage = "square.png";
             }
-        }
-        private void OnCategorySelected(object sender, EventArgs e)
-        {
-            var picker = (Picker)sender;
-            _selectedCategory = (string)picker.SelectedItem;
-            // Add any additional logic you want to execute when a new category is selected
         }
 
         private void OnResetButtonClicked(object sender, EventArgs e)
         {
             App.TimerService.Reset();
+            _isTimerRunning = false;
+            CurrentButtonImage = "play.png";
         }
+
         private void OnCancelButtonClicked(object sender, EventArgs e)
         {
             // Handle the cancel button click
@@ -80,17 +76,29 @@ namespace TimeWizard
             MainThread.BeginInvokeOnMainThread(() =>
             {
                 currentTimerLabel.Text = App.TimerService.CurrentTime.ToString("hh\\:mm\\:ss");
-
-                // Check if CurrentSession is not null before accessing TotalTime
                 if (App.SessionService.CurrentSession != null)
                 {
                     totalTimeTodayLabel.Text = App.SessionService.CurrentSession.TotalTime.ToString("hh\\:mm\\:ss");
                 }
                 else
                 {
-                    totalTimeTodayLabel.Text = "00:00:00"; // Or some default value
+                    totalTimeTodayLabel.Text = "Current Ses Null";
                 }
             });
+        }
+
+        public void InitializeTimerLabel()
+        {
+            var today = DateTime.Today;
+            Session? currentSession = App.SessionService.Sessions.FirstOrDefault(s => s.Date.Date == today);
+            if (currentSession != null)
+            {
+                MainThread.BeginInvokeOnMainThread(() =>
+                {
+                        totalTimeTodayLabel.Text = currentSession.TotalTime.ToString("hh\\:mm\\:ss");                
+                });
+            }
+
         }
     }
 }
