@@ -82,7 +82,7 @@ namespace TimeWizard
                 }
                 else
                 {
-                    totalTimeTodayLabel.Text = "Current Ses Null";
+                    totalTimeTodayLabel.Text = "00:00:00";
                 }
             });
         }
@@ -97,6 +97,10 @@ namespace TimeWizard
                 {
                         totalTimeTodayLabel.Text = currentSession.TotalTime.ToString("hh\\:mm\\:ss");                
                 });
+            }
+            else
+            {
+                totalTimeTodayLabel.Text = "00:00:00";
             }
 
         }

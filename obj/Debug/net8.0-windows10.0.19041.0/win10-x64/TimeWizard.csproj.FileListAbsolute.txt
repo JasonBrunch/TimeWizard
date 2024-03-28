@@ -177,3 +177,7 @@ C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-
 C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-100.png
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\reset.scale-100.png
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\digital-7 (mono).ttf
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\digital.ttf

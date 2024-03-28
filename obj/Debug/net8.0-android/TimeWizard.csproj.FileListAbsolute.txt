@@ -1038,3 +1038,7 @@ C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\stamp\_ConvertReso
 C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\resizetizer\f\digital-7 (mono).ttf
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\resizetizer\f\digital.ttf
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\resizetizer\r\drawable\back.png
+C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-android\resizetizer\r\drawable\reset.png

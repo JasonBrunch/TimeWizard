@@ -12,23 +12,12 @@
             </ResourceDictionary.MergedDictionaries>
             <Color x:Key="SharedBackgroundColor">#1c1f1c</Color>
             <Style x:Key="PrimaryButtonStyle" TargetType="ImageButton">
-
-
-
-
-
                 <Setter Property="HeightRequest" Value="100" />
                 <Setter Property="WidthRequest" Value="100" />
                 <Setter Property="VerticalOptions" Value="Center" />
                 <Setter Property="HorizontalOptions" Value="Center" />
-
-
             </Style>
             <Style x:Key="SecondaryButtonStyle" TargetType="ImageButton">
-
-
-
-
                 <Setter Property="HeightRequest" Value="50" />
                 <Setter Property="WidthRequest" Value="75" />
                 <Setter Property="VerticalOptions" Value="Center" />
@@ -38,8 +27,8 @@
             </Style>
             <Style x:Key="PrimaryTimerStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="WhiteSmoke" />
-                <Setter Property="FontSize" Value="100" />
-                <Setter Property="FontFamily" Value="TimeBomb" />
+                <Setter Property="FontSize" Value="70" />
+                <Setter Property="FontFamily" Value="digital.ttf#Digital-7 Mono" />
             </Style>
             <Style x:Key="SecondaryTimerStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="WhiteSmoke" />

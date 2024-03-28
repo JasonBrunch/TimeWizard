@@ -22,26 +22,25 @@
         <!--  Navigation Labels  -->
         <HorizontalStackLayout
             Grid.Row="0"
+            Padding="0,20,0,0"
             HorizontalOptions="CenterAndExpand"
-            Spacing="20"
-            Padding="0,20,0,0">
+            Spacing="20">
             <Label
+                FontSize="20"
                 Text="Timer"
                 TextColor="White"
-                TextDecorations="Underline" 
-                FontSize="20"/>
+                TextDecorations="Underline" />
             <Label
+                FontSize="20"
                 Opacity="0.5"
                 Text="Stats"
-                TextColor="White"
-                FontSize="20"
-                />
+                TextColor="White" />
         </HorizontalStackLayout>
 
         <!--  Timer Section  -->
         <VerticalStackLayout
             Grid.Row="1"
-            Padding="10"
+            Padding="0"
             HorizontalOptions="Center"
             Spacing="10"
             VerticalOptions="Center">
@@ -49,17 +48,12 @@
                 x:Name="currentTimerLabel"
                 Style="{StaticResource PrimaryTimerStyle}"
                 Text="00:00:00" />
-            <HorizontalStackLayout
-                Spacing="10"
-                Margin="5,0,0,0">
+            <HorizontalStackLayout Margin="1,0,0,0" Spacing="10">
                 <Label
                     x:Name="totalTimeHeading"
                     Style="{StaticResource SecondaryTimerStyle}"
-                    Text="TOTAL:"/>
-                <Label
-                    x:Name="totalTimeTodayLabel"
-                    Style="{StaticResource SecondaryTimerStyle}"
-                    />
+                    Text="TOTAL:" />
+                <Label x:Name="totalTimeTodayLabel" Style="{StaticResource SecondaryTimerStyle}" />
             </HorizontalStackLayout>
         </VerticalStackLayout>
 
@@ -72,7 +66,7 @@
                 x:Name="cancelButton"
                 BackgroundColor="Transparent"
                 Clicked="OnCancelButtonClicked"
-                Source="smiles.png"
+                Source="back.png"
                 Style="{StaticResource SecondaryButtonStyle}" />
             <ImageButton
                 x:Name="startStopButton"
@@ -84,7 +78,7 @@
                 x:Name="resetButton"
                 BackgroundColor="Transparent"
                 Clicked="OnResetButtonClicked"
-                Source="smiles.png"
+                Source="reset.png"
                 Style="{StaticResource SecondaryButtonStyle}" />
         </HorizontalStackLayout>
     </Grid>
