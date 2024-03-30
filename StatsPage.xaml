@@ -6,57 +6,84 @@
     xmlns:model="clr-namespace:TimeWizard"
     BackgroundColor="#1c1f1c"
     Shell.NavBarIsVisible="False">
+
     <Grid>
         <Grid.GestureRecognizers>
             <SwipeGestureRecognizer Direction="Right" Swiped="OnSwipedRight" />
         </Grid.GestureRecognizers>
 
-        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!--  For Navigation Labels  -->
+            <RowDefinition Height="Auto" />
+            <!--  For Total Hours Label  -->
+            <RowDefinition Height="*" />
+            <!--  For List  -->
+        </Grid.RowDefinitions>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <!--  For Navigation Labels  -->
-                <RowDefinition Height="*" />
-                <!--  For List  -->
-            </Grid.RowDefinitions>
-
-            <HorizontalStackLayout
+        <!--  Navigation Labels  -->
+        <HorizontalStackLayout
             Grid.Row="0"
             Padding="10"
             HorizontalOptions="CenterAndExpand"
             Spacing="20">
-                <Label
+            <Label
                 FontSize="20"
                 Opacity="0.5"
                 Text="Timer"
                 TextColor="White" />
-
-                <Label
+            <Label
                 FontSize="20"
                 Text="Stats"
                 TextColor="White"
                 TextDecorations="Underline" />
-            </HorizontalStackLayout>
 
-            <CollectionView
+        </HorizontalStackLayout>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!--  Total Hours Label  -->
+            <Label
+                x:Name="totalHoursLabel"
+                Grid.Column="0"
+                HorizontalOptions="Start"
+                Text="TOTAL HOURS: "
+                TextColor="White"
+                VerticalOptions="Center" />
+
+            <!--  Reset Button  -->
+            <Button
+                x:Name="resetButton"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                Clicked="OnResetButtonClicked"
+                Text="Reset"
+                TextColor="WhiteSmoke" />
+        </Grid>
+
+        <!--  CollectionView for Sessions List  -->
+        <CollectionView
             x:Name="sessionsList"
-            Grid.Row="1"
+            Grid.Row="2"
             ItemsSource="{Binding Sessions}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:SessionDisplay">
-                        <Frame
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:SessionDisplay">
+                    <Frame
                         Margin="5"
                         Padding="10"
-                     Background="Transparent"
+                        BackgroundColor="Transparent"
                         CornerRadius="10">
-                            <Label
+                        <Label
                             FontSize="16"
                             Text="{Binding DisplayText}"
                             TextColor="WhiteSmoke" />
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </Grid>
+
 </ContentPage>

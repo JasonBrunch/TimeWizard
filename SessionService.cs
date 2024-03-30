@@ -89,8 +89,46 @@ namespace TimeWizard
 
         public void ResetSessions()
         {
+            Sessions.Clear();   
+            SaveSessions();
+        }
+        public void ClearAllSessions()
+        {
             Sessions.Clear();
             SaveSessions();
         }
+        //erase the list and make a new one
+        //save the list
+
+
+
+
+
+
+
+
+
+
+
+        /*
+        public void GenerateTestData(int numberOfDays)
+        {
+            Sessions.Clear(); // Clear existing data for testing
+
+            // Generate data for the past 'numberOfDays' days
+            for (int i = 0; i < numberOfDays; i++)
+            {
+                var random = new Random();
+                var sessionDate = DateTime.Today.AddDays(-i);
+                var sessionDuration = new TimeSpan(random.Next(0, 24), random.Next(0, 60), 0); // Random duration
+
+                Sessions.Add(new Session
+                {
+                    Date = sessionDate,
+                    TotalTime = sessionDuration
+                });
+            }
+        }
+        */
     }
 }

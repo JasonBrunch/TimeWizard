@@ -11,14 +11,14 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.timewizard")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.Wizards.timewizard")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "TimeWizard")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TimeWizard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0fd520156fe135afb47c22a6a8ce6a3595c695dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+96e2c7a10bf8fdf53716dee6fcdcf2da8afca5f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TimeWizard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TimeWizard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

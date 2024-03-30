@@ -53,5 +53,10 @@ namespace TimeWizard
             
             TimerElapsed?.Invoke();
         }
+         public void ResetCurrentTime()
+        {
+            
+        }
     }
+   
 }

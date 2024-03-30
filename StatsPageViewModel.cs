@@ -50,7 +50,7 @@ namespace TimeWizard
                 Sessions.Add(new SessionDisplay
                 {
                     Date = session.Date,
-                    DisplayText = $"{session.Date.ToString("dddd MMM dd")}: {session.TotalTime.ToString(@"hh\:mm\:ss")} hours"
+                    DisplayText = $"{session.Date.ToString("dddd MMM dd")}: {session.TotalTime.ToString(@"hh\:mm\:ss")} "
                 });
             }
         }

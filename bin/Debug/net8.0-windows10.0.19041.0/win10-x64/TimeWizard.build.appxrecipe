@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
-    <PackageIdentityName>com.companyname.timewizard</PackageIdentityName>
+    <PackageIdentityName>com.Wizards.timewizard</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
@@ -54,9 +54,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\digital-7 %28mono%29.ttf">
-      <PackagePath>digital-7 %28mono%29.ttf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\digital.ttf">
       <PackagePath>digital.ttf</PackagePath>
@@ -217,14 +214,8 @@
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\reset.scale-100.png">
       <PackagePath>reset.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\smiles.scale-100.png">
-      <PackagePath>smiles.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\square.scale-100.png">
       <PackagePath>square.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-100.png">
-      <PackagePath>test.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sampson\projects\TimeWizard\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\TimeWizard.deps.json">
       <PackagePath>TimeWizard.deps.json</PackagePath>

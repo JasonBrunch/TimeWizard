@@ -18,6 +18,7 @@ public partial class StatsPage : ContentPage
     {
         base.OnAppearing();
         _viewModel.LoadSessions();
+        DisplayTotalHours();
         App.TimerService.TimerElapsed += OnTimerElapsed; // Subscribe to the event
     }
 
@@ -38,5 +39,25 @@ public partial class StatsPage : ContentPage
     private async void OnSwipedRight(object sender, SwipedEventArgs e)
     {
         await Shell.Current.GoToAsync("..");
+    }
+    private void DisplayTotalHours()
+    {
+        TimeSpan totalDuration = TimeSpan.Zero;
+        foreach (Session session in App.SessionService.Sessions)
+        {
+            totalDuration += session.TotalTime;
+        }
+
+        // Format totalDuration to a readable string, e.g., "Total Hours: 123:45:67"
+        totalHoursLabel.Text = $"Total Hours: {totalDuration:hh\\:mm\\:ss}";
+    }
+    private void OnResetButtonClicked(object sender, EventArgs e)
+    {
+        //erase the list and make a new one
+        //save the list
+        App.SessionService.ClearAllSessions();
+        _viewModel.LoadSessions();
+        DisplayTotalHours();
+
     }
 }

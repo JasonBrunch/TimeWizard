@@ -25,16 +25,28 @@
             Padding="0,20,0,0"
             HorizontalOptions="CenterAndExpand"
             Spacing="20">
-            <Label
-                FontSize="20"
-                Text="Timer"
-                TextColor="White"
-                TextDecorations="Underline" />
-            <Label
-                FontSize="20"
-                Opacity="0.5"
-                Text="Stats"
-                TextColor="White" />
+            <VerticalStackLayout Spacing="3">
+                <Label
+                    FontSize="20"
+                    Text="Timer"
+                    TextColor="White" />
+                <BoxView
+                    BackgroundColor="White"
+                    HeightRequest="2"
+                    HorizontalOptions="FillAndExpand" />
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="3">
+                <Label
+                    FontSize="20"
+                    Opacity="0.5"
+                    Text="Stats"
+                    TextColor="White" />
+                <!--  This BoxView acts as an invisible placeholder for alignment  -->
+                <BoxView
+                    HeightRequest="2"
+                    HorizontalOptions="FillAndExpand"
+                    Opacity="0" />
+            </VerticalStackLayout>
         </HorizontalStackLayout>
 
         <!--  Timer Section  -->
@@ -61,22 +73,26 @@
         <HorizontalStackLayout
             Grid.Row="2"
             HorizontalOptions="CenterAndExpand"
-            Spacing="20">
+            Spacing="20"
+            >
             <ImageButton
                 x:Name="cancelButton"
                 BackgroundColor="Transparent"
                 Clicked="OnCancelButtonClicked"
+                Margin="0,0,0,30"
                 Source="back.png"
                 Style="{StaticResource SecondaryButtonStyle}" />
             <ImageButton
                 x:Name="startStopButton"
                 BackgroundColor="Transparent"
+                Margin="0,0,0,30"
                 Clicked="OnStartStopButtonClicked"
                 Source="{Binding CurrentButtonImage}"
                 Style="{StaticResource PrimaryButtonStyle}" />
             <ImageButton
                 x:Name="resetButton"
                 BackgroundColor="Transparent"
+                Margin="0,0,0,30"
                 Clicked="OnResetButtonClicked"
                 Source="reset.png"
                 Style="{StaticResource SecondaryButtonStyle}" />

@@ -14,6 +14,11 @@
             SessionService.LoadSessions();
 
             MainPage = new AppShell();
+
+
+
+            // Generate test data
+            //SessionService.GenerateTestData(30);
         }
         protected override void OnSleep()
         {

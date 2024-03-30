@@ -68,7 +68,25 @@ namespace TimeWizard
 
         private void OnCancelButtonClicked(object sender, EventArgs e)
         {
-            // Handle the cancel button click
+            // Get the current time
+            TimeSpan currentTime = App.TimerService.CurrentTime;
+
+            // Subtract the current time from the current session's total time
+            if (App.SessionService.CurrentSession != null)
+            {
+                var updatedTotalTime = App.SessionService.CurrentSession.TotalTime - currentTime;
+                App.SessionService.CurrentSession.TotalTime = updatedTotalTime;
+            }
+
+            // Stop the timer
+            App.TimerService.StopTimer();
+            _isTimerRunning = false;
+
+            // Save the session data to storage
+            App.SessionService.SaveSessions();
+
+            //reset the image
+            CurrentButtonImage = "play.png";
         }
 
         private void UpdateTimerLabel()
